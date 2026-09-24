@@ -27,7 +27,7 @@ app.use(morgan(process.env.NODE_ENV === "production" ? "combined" : "dev"));
 
 // Lock CORS down to your actual frontend origin in production.
 // FRONTEND_URL can be a comma-separated list if you have more than one.
-const allowedOrigins = (process.env.FRONTEND_URL || "http://localhost:5173")
+const allowedOrigins = ("https://e-voting-theta-seven.vercel.app/")
   .split(",")
   .map((o) => o.trim());
 
